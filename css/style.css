@@ -1,0 +1,195 @@
+body
+{
+    width:100%;
+    margin:0;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, a, input, button, div
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:14px;
+}
+
+h1
+{
+    margin: 0 0 10px 0;
+    font-size: 26px;
+}
+
+h2
+{
+    font-weight: 400;
+}
+
+input
+{
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #a1a1a1;
+}
+
+input:focus
+{
+    outline:none;
+}
+
+button
+{
+    border: 1px solid #a1a1a1;
+    margin: 30px 0 0 0;
+    padding: 10px ;
+    border-radius: 5px;
+    font-size:16px;
+}
+
+button:focus
+{
+    outline:none;
+}
+
+button:hover
+{
+    outline:none;
+    background-color: #0095ff;
+    border: 1px solid #0095ff;
+    color:#fff;
+    cursor: pointer;
+}
+
+
+.flex-areas
+{
+    display:flex;
+}
+
+
+.div-left
+{
+    width: 56.666%;
+    height: 100vh;
+    padding: 30px 5%;
+    border-right: 1px solid #a1a1a1;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-flow: wrap;
+}
+
+.flex-item
+{
+    width: 33.333%;
+}
+
+
+.div-right
+{
+    width: 26.666%;
+    height: 100vh;
+    padding: 30px 5%;
+}
+
+.flex2
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-flow: wrap;
+}
+
+.flex-item2
+{
+    width: 100%;
+}
+
+.mt
+{
+    margin-top: 20px;
+}
+
+.download
+{
+    position: fixed; 
+    right:0; 
+    top:0; 
+    z-index:999999;
+}
+
+.download a i
+{
+    color: #0095ff;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #a1a1a1;
+    text-align: center;
+    padding: 0;
+    line-height: 48px;
+    margin: 30px 30px 0 0;
+    border-radius: 5px;
+    font-size: 28px;
+}
+
+#a-make i
+{
+    color: #a1a1a1;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #a1a1a1;
+    text-align: center;
+    padding: 0;
+    line-height: 48px;
+    margin: 30px 30px 0 0;
+    border-radius: 5px;
+    font-size: 28px;
+}
+
+.bt
+{
+    border-top: 1px solid #a1a1a1;
+}
+
+#canvasID
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 10px dashed #a1a1a1;
+    border-right: 10px dashed #a1a1a1;
+}
+
+.graphBar1
+{
+    border-radius: 5px;
+    height:40px;
+    background-color: #0095ff;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.graphBar2
+{
+    border-radius: 5px;
+    height: 40px;
+    background-color:#a1a1a1;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.blink
+{
+    animation: blink 2s infinite;
+}
+
+@keyframes blink{
+    0% {opacity:20%;}
+    45% {opacity:80%;}
+    55% {opacity:80%;}
+    100% {opacity:20%;}
+}

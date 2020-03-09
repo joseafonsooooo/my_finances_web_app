@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/facdf1f8fa.js" crossorigin="anonymous"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <head>
+
+<title>Finances</title>
+</head>
+
+
+<body scroll="no" style="overflow: hidden">
+
+    <div id="main">
+
+        <div class="flex-areas" id="screenshot">
+        
+        <!-- Zona Despesas -->
+        <div class="div-left">
+
+            <!--Categories-->
+            <h1>Despesas</h1>
+
+            <div class="flex">
+                
+                <!-- Mota -->
+                <div class="flex-item">
+                    <p>Prestação Mota</p>
+                    
+                    <input id="dA" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Seguro Mota</p>
+                    
+                    <input id="dB" type="number" value="0"/>
+                </div>
+
+                <!-- Carro -->
+                <div class="flex-item">
+                    <p>Prestação Carro</p>
+                    
+                    <input id="dC" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Seguro Carro</p>
+                    
+                    <input id="dD" type="number" value="0"/>
+                </div>
+
+                <!-- Casa -->
+                <div class="flex-item">
+                    <p>Prestação Casa</p>
+                    
+                    <input id="dE" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Seguro Casa</p>
+                    
+                    <input id="dF" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Condomínio</p>
+                    
+                    <input id="dG" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Água</p>
+                    
+                    <input id="dH" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Luz</p>
+                    
+                    <input id="dI" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Comissões CGD</p>
+                    
+                    <input id="dJ" type="number" value="0"/>
+                </div>
+
+                <!-- Saúde -->
+                <div class="flex-item">
+                    <p>Seguro Vida</p>
+                    
+                    <input id="dK" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Medicare</p>
+                    
+                    <input id="dL" type="number" value="0"/>
+                </div>
+
+                <!-- Serviços -->
+                <div class="flex-item">
+                    <p>Meo</p>
+                    
+                    <input id="dM" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Apple Music</p>
+                    
+                    <input id="dN" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>iCloud</p>
+                    
+                    <input id="dO" type="number" value="0"/>
+                </div>
+
+                <!-- Outros -->
+                <div class="flex-item">
+                    <p>Alimentação</p>
+                    
+                    <input id="dP" type="number" value="0"/>
+                </div>
+                
+                <div class="flex-item">
+                    <p>Gasolina</p>
+                    
+                    <input id="dQ" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Portagens</p>
+                    
+                    <input id="dR" type="number" value="0"/>
+                </div>
+
+                <div class="flex-item">
+                    <p>Outras</p>
+                    
+                    <input id="dS" type="number" value="0"/>
+                </div>
+                
+
+
+            </div>
+
+            <button id="submit">Atualizar</button>
+
+        </div>
+
+
+        <!-- Zona Feed -->
+        <div class="div-right">
+            <div class="flex2">
+                <div class="flex-item2">
+                    <h1 class=" ">Salários</h1>
+                    <p id="salarios">0</p>
+                </div>
+                
+                <h1 class="mt">Resultados</h1>
+                
+                <!-- Restante Alimentação -->
+                <div class="flex-item2">
+                    <h2>Restante Alimentação (de <span id="b1">0</span> €)</h2>
+                    <p id="val1">0</p>
+                </div>
+
+                <!-- Restante Gasolina -->
+                <div class="flex-item2">
+                    <h2>Restante Gasolina (de <span id="b2">0</span> €)</h2>
+                    <p id="val2">0</p>
+                </div>
+
+                <!-- Restante Portagens -->
+                <div class="flex-item2">
+                    <h2>Restante Portagens (de <span id="b3">0</span> €)</h2>
+                    <p id="val3">0</p>
+                </div>
+
+                <!-- Restante Total -->
+                <div class="flex-item2">
+                    <h1 class="mt">Restante Total</h1>
+                    <p id="val4">0</p>
+                </div>
+
+                <!-- Data atual -->
+                <div class="flex-item2 mt bt">
+                    <p class="mt" id="displayDate"></p>
+                </div>
+
+                <!-- Graph -->
+                <div class="flex-item2 graphBar1"> 100 %</div>
+                <div class="mt flex-item2 graphBar2 blink" id="graph2"> Atualiza ...</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="download">
+    <a id="a-make" href="#"><i class="fas fa-save"></i></a>
+    <a id="a-download" href="#" style="display:none; z-index: 0;"><i class="fas fa-download"></i></a>
+    <br>
+    <a id="a-refresh" href="#" style="display:none; z-index: 0;"><i class="fas fa-redo-alt"></i></a>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
